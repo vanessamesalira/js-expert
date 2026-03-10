@@ -16,13 +16,14 @@ class File {
   }
 
   static isValid(csvString, options = DEFAULT_OPTION) {
-    // para ver o conteudo do arquivo
+    // para ver o conteudo do arquivo 
     // fs.readFileSync('./mocks/threeItems-valid.csv', 'utf8')
 
+    // Conteúdo do destructuring:
     // [0] = headers
     // [1] = linha 1
     // [2] = linha 2
-    // ...variavel = restante do arquivo
+    // ...fileWithoutHeader = restante do arquivo (útil pq o arquivo pode ter muitas linhas)
     const [header, ...fileWithoutHeader] = csvString.split(/\r?\n/)
     const isHeaderValid = header === options.fields.join(',')
     if(!isHeaderValid) {
@@ -54,6 +55,7 @@ class File {
       const columns = line.split(',')
       const user = {}
       for(const index in columns) {
+        // trim() remove os espaços em branco do início e do fim da string
         user[header[index]] = columns[index].trim()
       }
       return user

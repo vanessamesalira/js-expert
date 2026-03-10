@@ -1,6 +1,6 @@
 const { error } = require("./src/constants")
 const File = require("./src/file")
-const assert = require('assert')
+const assert = require('assert') // modulo nativo do node, utilizado para realizar assercoes em testes, ou seja, verificar se o resultado de uma funcao ou operacao é igual ao valor esperado.
 
 // IFEE
 ;(async () => {
