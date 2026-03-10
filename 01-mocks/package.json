@@ -1,5 +1,5 @@
 {
-  "name": "aula01-mocks",
+  "name": "01-mocks",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
     "node": "18"
   },
   "keywords": [],
-  "author": "erickwendel",
+  "author": "vanessamesalira",
   "license": "ISC"
 }
