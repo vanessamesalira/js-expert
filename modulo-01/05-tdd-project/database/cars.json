@@ -1,1 +1,23 @@
-[{"id":"c5ca2a13-3c34-4e53-bab7-3ce69f47a239","name":"Impala","releaseYear":2025,"available":true,"gasAvailable":true},{"id":"9a67e993-2396-48ad-a2ae-812b3f28a548","name":"Accord","releaseYear":2025,"available":true,"gasAvailable":true},{"id":"bf16026d-4e09-44d7-9aa6-17f2bde5f9ca","name":"Roadster","releaseYear":2025,"available":true,"gasAvailable":true}]
+[
+  {
+    "id": "c5ca2a13-3c34-4e53-bab7-3ce69f47a239",
+    "name": "Impala",
+    "releaseYear": 2025,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "9a67e993-2396-48ad-a2ae-812b3f28a548",
+    "name": "Accord",
+    "releaseYear": 2025,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "bf16026d-4e09-44d7-9aa6-17f2bde5f9ca",
+    "name": "Roadster",
+    "releaseYear": 2025,
+    "available": true,
+    "gasAvailable": true
+  }
+]
