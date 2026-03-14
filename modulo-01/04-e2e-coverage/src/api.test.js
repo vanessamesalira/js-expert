@@ -1,7 +1,10 @@
+// Essa lib mocha é a mais utilizada para testes em JavaScript, ela é a base para muitos outros frameworks de teste
 const { describe, it, after, before } = require('mocha')
+//Essa lib supertest é uma lib de teste para APIs
 const supertest = require('supertest')
 const assert = require('assert')
 describe('API Suite test', () => {
+
   let app
   before((done) => {
     app = require('./api')
@@ -10,6 +13,7 @@ describe('API Suite test', () => {
 
   after(done => app.close(done))
 
+  // Separar os testes por rota, para facilitar a leitura e manutenção dos testes
   describe('/contact:get', () => {
     it('should request the contact route and return HTTP Status 200', async () => {
       const response = await supertest(app)
@@ -24,7 +28,7 @@ describe('API Suite test', () => {
     it('should request the login and return HTTP Status 200', async () => {
       const response = await supertest(app)
         .post('/login')
-        .send({ username: "erickwendel", password: "123" })
+        .send({ username: "vanessamesalira", password: "123" })
         .expect(200)
 
       assert.strictEqual(response.text, 'Log in succeeded!')

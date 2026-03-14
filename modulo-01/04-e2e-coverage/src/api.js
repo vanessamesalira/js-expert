@@ -1,6 +1,6 @@
 const http = require('http')
 const DEFAULT_USER = {
-  username: 'ErickWendel',
+  username: 'VanessaMesalira',
   password: '123'
 }
 const { once } = require('events')
@@ -9,8 +9,8 @@ const routes = {
     response.write('contact us page')
     return response.end()
   },
-  // curl -i -X POST --data '{"username": "erickwendel","password": "23"}' localhost:3000/login
-  // curl -i -X POST --data '{"username": "Erickwendel","password": "123"}' localhost:3000/login
+  // curl -i -X POST --data '{"username": "vanessamesalira","password": "23"}' localhost:3000/login
+  // curl -i -X POST --data '{"username": "VanessaMesalira","password": "123"}' localhost:3000/login
   '/login:post': async (request, response) => {
     const user = JSON.parse(await once(request, "data"))
     const toLower = (text) => text.toLowerCase()
